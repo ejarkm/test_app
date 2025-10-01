@@ -5,7 +5,7 @@ import tagger from "@dhiwise/component-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/test_app/", // Set base path for GitHub Pages
+  base: process.env.NODE_ENV === "production" ? "/test_app/" : "/",
   build: {
     outDir: "build",
     chunkSizeWarningLimit: 2000,

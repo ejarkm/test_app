@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Icon from '../AppIcon';
-import UserProfileDropdown from './UserProfileDropdown';
+import UserProfileDropDown from './UserProfileDropDown';
 import NotificationIndicator from './NotificationIndicator';
 
 const Header = ({ user = null, notifications = [] }) => {
@@ -149,7 +149,7 @@ const Header = ({ user = null, notifications = [] }) => {
           />
 
           {/* User Profile */}
-          <UserProfileDropdown user={user} />
+          <UserProfileDropDown user={user} />
 
           {/* Mobile Menu Button */}
           <button
